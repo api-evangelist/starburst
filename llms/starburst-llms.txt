@@ -1,0 +1,31 @@
+# Starburst
+
+> Starburst is an enterprise data analytics and intelligence platform built on Trino (the open-source distributed SQL query engine). It lets organizations access and query data across systems through a unified context layer — federated analytics with no pipelines or data movement required. Products include Starburst Galaxy (fully managed cloud on AWS/GCP/Azure), Starburst Enterprise (self-managed), Icehouse (Iceberg + Trino lakehouse), and AIDA (conversational analytics assistant).
+
+## APIs
+
+- [Starburst Galaxy REST API](https://docs.starburst.io/starburst-galaxy/developer-tools/api/index.html): OAuth2 client-credentials, base https://<account>.galaxy.starburst.io/public-api. Services: clusters, catalogs, users, roles, privileges, discovery, tags, row filters, column masks, policies, data products, SQL jobs.
+- [Starburst Enterprise REST API](https://docs.starburst.io/latest/starburst-rest-api.html): Basic/Bearer auth + X-Trino-Role; serves an OpenAPI spec at the api/v1/openApi endpoint.
+
+## Docs
+
+- [Documentation](https://docs.starburst.io/)
+- [Developer Center](https://devcenter.starburst.io/)
+- [Getting Started (Galaxy)](https://docs.starburst.io/starburst-galaxy/get-started.html)
+- [Release Notes](https://docs.starburst.io/starburst-galaxy/get-started/release-notes.html)
+- [Authentication](https://docs.starburst.io/starburst-galaxy/developer-tools/api/index.html)
+
+## Packages
+
+- [terraform-provider-galaxy](https://registry.terraform.io/providers/starburstdata/galaxy/latest): official Terraform provider for Galaxy.
+- [dbt-trino](https://pypi.org/project/dbt-trino/): official Starburst dbt adapter.
+- [trino (Python client)](https://pypi.org/project/trino/): official Trino Python client.
+- [trino-client (JS)](https://www.npmjs.com/package/trino-client): official Trino JavaScript client.
+
+## Tools
+
+- [GitHub organization](https://github.com/starburstdata)
+- [Trust Center](https://trust.starburst.io/)
+- [Status](https://status.galaxy.starburst.io/)
+- [Pricing](https://www.starburst.io/pricing/)
+- [Blog](https://www.starburst.io/blog/)

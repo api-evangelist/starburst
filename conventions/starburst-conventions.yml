@@ -1,0 +1,35 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.starburst.io/starburst-galaxy/developer-tools/api/index.html
+api: Starburst Galaxy public API
+conventions:
+  authentication:
+    style: oauth2-client-credentials
+    header: "Authorization: Bearer <token>"
+    token_endpoint: /oauth/v2/token
+    token_ttl_seconds: 600
+    ref: authentication/starburst-authentication.yml
+  base_url: https://<account>.galaxy.starburst.io/public-api
+  versioning:
+    style: uri-path
+    current: v1
+    release_scheme: calendar-date
+    release_notes: https://docs.starburst.io/starburst-galaxy/get-started/release-notes.html
+    ref: lifecycle/starburst-lifecycle.yml
+  pagination:
+    style: cursor
+    request_param: pageToken
+    response_field: nextPageToken
+    notes: List endpoints return a nextPageToken; pass it back as pageToken to fetch the next page.
+  idempotency:
+    supported: false
+    notes: No idempotency-key header is documented for the Galaxy public API.
+  error_envelope:
+    format: unknown
+    notes: A structured error reference was not located in the public docs; not fabricated.
+  rate_limiting:
+    documented: false
+    notes: No published rate-limit signaling headers found in the public API docs.
+  role_selection:
+    header: X-Trino-Role
+    notes: Starburst Enterprise REST API selects the active role via the X-Trino-Role header (built-in access control).

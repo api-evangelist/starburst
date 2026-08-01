@@ -1,0 +1,39 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.starburst.io/starburst-galaxy/get-started/release-notes.html
+scheme: calendar-date
+product: Starburst Galaxy
+current: '2026-07-13'
+entries:
+  - date: '2026-07-13'
+    breaking: false
+    additions: true
+    highlights: Introduced guardrails — cluster-wide protections for AIDA (AI Data Assistant).
+  - date: '2026-05-29'
+    breaking: false
+    additions: true
+    highlights: AI Data Assistant (AIDA) reached general availability with custom persona prompts and interactive charts.
+  - date: '2026-04-29'
+    breaking: false
+    additions: true
+    highlights: Removed the 1,000-row limit on query results; downloads allowed when datasets exceed 100MB.
+  - date: '2026-04-14'
+    breaking: false
+    additions: true
+    highlights: Public preview of the conversational analytics assistant for natural-language data exploration.
+  - date: '2026-03-24'
+    breaking: false
+    additions: true
+    highlights: Launched data quality and scheduling API services (preview).
+  - date: '2026-02-25'
+    breaking: false
+    additions: true
+    highlights: Client connectivity over AWS PrivateLink reached general availability.
+  - date: '2026-02-18'
+    breaking: false
+    additions: true
+    highlights: Added Datadog integration to export cluster metrics and quality checks.
+  - date: '2026-02-09'
+    breaking: false
+    additions: true
+    highlights: Multi-statement SQL jobs entered public preview (up to 10 queries).

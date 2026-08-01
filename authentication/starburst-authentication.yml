@@ -1,0 +1,37 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.starburst.io/starburst-galaxy/developer-tools/api/index.html
+docs: https://docs.starburst.io/starburst-galaxy/developer-tools/api/index.html
+summary:
+  types: [oauth2, http]
+  oauth2_flows: [clientCredentials]
+  http_schemes: [bearer, basic]
+schemes:
+  - name: galaxyOAuth2
+    type: oauth2
+    scheme: oauth2
+    flow: clientCredentials
+    token_url: https://<account>.galaxy.starburst.io/oauth/v2/token
+    token_ttl_seconds: 600
+    description: >-
+      Starburst Galaxy public API uses the OAuth2 client credentials flow. A base64-encoded
+      clientId:clientSecret is exchanged at /oauth/v2/token for a bearer access token that
+      expires after 10 minutes. The token is sent as `Authorization: Bearer <token>`.
+    sources: [docs.starburst.io/starburst-galaxy/developer-tools/api]
+  - name: galaxyBearer
+    type: http
+    scheme: bearer
+    description: Bearer access token obtained from the Galaxy OAuth2 token endpoint.
+    sources: [docs.starburst.io/starburst-galaxy/developer-tools/api]
+  - name: enterpriseBasic
+    type: http
+    scheme: basic
+    description: >-
+      Starburst Enterprise REST API accepts HTTP Basic auth (base64 credentials) or bearer
+      token auth using the same token as the web UI; the active role is selected via the
+      X-Trino-Role header.
+    sources: [docs.starburst.io/latest/starburst-rest-api.html]
+notes: >-
+  Galaxy uses OAuth2 client-credentials (no granular OAuth scopes documented; access is governed
+  by role/privilege services), so no scopes/ artifact is emitted. Enterprise uses Basic/Bearer +
+  X-Trino-Role role selection backed by built-in access control.

@@ -1,9 +1,28 @@
 aid: starburst
 name: Starburst
-description: Starburst is a company surfaced as a portfolio company of a16z, index-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Starburst is an enterprise data analytics and intelligence platform built on Trino, the
+  open-source distributed SQL query engine. It lets organizations access and query data across
+  disparate systems through a unified context layer — federated analytics with no pipelines or
+  data movement required. Its products include Starburst Galaxy (a fully managed cloud service on
+  AWS, GCP, and Azure), Starburst Enterprise (self-managed for hybrid and on-premises), Icehouse
+  (Apache Iceberg plus Trino for the lakehouse), and AIDA, a conversational AI data assistant.
+  Starburst Galaxy exposes a public REST API secured with OAuth2 client credentials for managing
+  clusters, catalogs, users, roles, privileges, access policies, data products, and SQL jobs.
 url: https://raw.githubusercontent.com/api-evangelist/starburst/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.starburst.io/wp-content/uploads/2021/01/starburst-og.jpg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -13,15 +32,87 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Data Analytics
+- Data Lakehouse
+- SQL Query Engine
+- Trino
+- Federated Query
+- Data Governance
+- Business Intelligence
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Starburst Galaxy REST API
+  description: >-
+    Public REST API for Starburst Galaxy, secured with the OAuth2 client-credentials flow. Manages
+    clusters, catalogs, users, roles, privileges, access-control policies, tags, row filters,
+    column masks, data products, and SQL jobs. List endpoints paginate via nextPageToken.
+  humanURL: https://docs.starburst.io/starburst-galaxy/developer-tools/api/index.html
+  baseURL: https://galaxy.starburst.io/public-api
+  properties:
+  - type: Documentation
+    url: https://docs.starburst.io/starburst-galaxy/developer-tools/api/index.html
+  - type: Authentication
+    url: authentication/starburst-authentication.yml
 common:
 - type: Website
-  url: http://starburstdata.com
+  url: https://www.starburst.io/
+- type: DeveloperPortal
+  url: https://devcenter.starburst.io/
+- type: Documentation
+  url: https://docs.starburst.io/
+- type: APIReference
+  url: https://docs.starburst.io/starburst-galaxy/developer-tools/api/index.html
+- type: GettingStarted
+  url: https://docs.starburst.io/starburst-galaxy/get-started.html
+- type: Support
+  url: https://www.starburst.io/learn/support/
+- type: Blog
+  url: https://www.starburst.io/blog/
+- type: GitHubOrganization
+  url: https://github.com/starburstdata
+- type: Pricing
+  url: https://www.starburst.io/pricing/
+- type: SignUp
+  url: https://www.starburst.io/free-trial/
+- type: Login
+  url: https://galaxy.starburst.io/login
+- type: TermsOfService
+  url: https://www.starburst.io/terms/
+- type: PrivacyPolicy
+  url: https://www.starburst.io/privacy-policy/
+- type: StatusPage
+  url: https://status.galaxy.starburst.io/
+- type: TrustCenter
+  url: https://trust.starburst.io/
+- type: Packages
+  url: packages/starburst-packages.yml
+- type: SDKs
+  url: packages/starburst-packages.yml
+- type: Authentication
+  url: authentication/starburst-authentication.yml
+- type: Conventions
+  url: conventions/starburst-conventions.yml
+- type: Lifecycle
+  url: lifecycle/starburst-lifecycle.yml
+- type: ChangeLog
+  url: changelog/starburst-changelog.yml
+- type: Conformance
+  url: conformance/starburst-conformance.yml
+- type: MCPServer
+  url: mcp/starburst-mcp.yml
+- type: LLMsTxt
+  url: llms/starburst-llms.txt
+- type: DomainSecurity
+  url: security/starburst-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 11
+  pass: local-v1

@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: derived
+source: https://docs.starburst.io/starburst-galaxy/developer-tools/api/index.html
+standards:
+  - id: oauth2
+    conforms: true
+    evidence: Galaxy public API authenticates via OAuth2 client-credentials flow at /oauth/v2/token.
+  - id: oauth2-client-credentials
+    conforms: true
+    evidence: Documented clientId/clientSecret exchange for a short-lived bearer token.
+  - id: oidc
+    conforms: false
+    evidence: No OpenID Connect discovery or ID tokens documented; client-credentials only.
+  - id: cursor-pagination
+    conforms: true
+    evidence: List responses return nextPageToken; requests accept pageToken.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: No application/problem+json error envelope confirmed in public docs.
+  - id: rfc9116-security-txt
+    conforms: false
+    evidence: /.well-known/security.txt returned 404 on starburst.io and docs.starburst.io.
+  - id: openapi
+    conforms: true
+    evidence: Starburst Enterprise serves a full OpenAPI spec at the api/v1/openApi endpoint (on-server only, not publicly downloadable).

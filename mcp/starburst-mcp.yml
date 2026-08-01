@@ -1,0 +1,43 @@
+generated: '2026-07-21'
+method: derived
+status: candidate
+source: https://docs.starburst.io/starburst-galaxy/developer-tools/api/index.html
+note: >-
+  No official hosted/remote Starburst MCP server was confirmed in public sources during this pass.
+  The tools below are a CANDIDATE surface derived from the documented Starburst Galaxy public-API
+  service groups (a governance starting point, not a published server).
+server:
+  name: starburst-galaxy
+  transport: http
+  url: null
+tools:
+  - name: list_clusters
+    description: List Starburst Galaxy clusters.
+    source_operation: Galaxy Cluster Service
+  - name: create_cluster
+    description: Create a new cluster.
+    source_operation: Galaxy Cluster Service
+  - name: list_catalogs
+    description: List catalogs.
+    source_operation: Galaxy Catalog Service
+  - name: create_catalog
+    description: Create a catalog.
+    source_operation: Galaxy Catalog Service
+  - name: list_users
+    description: List users.
+    source_operation: Galaxy User Service
+  - name: list_roles
+    description: List roles.
+    source_operation: Galaxy Role Service
+  - name: manage_privileges
+    description: Grant or revoke role privileges.
+    source_operation: Galaxy Privilege Service
+  - name: run_sql_job
+    description: Schedule or execute a SQL query job.
+    source_operation: Galaxy SQL Jobs Service
+  - name: list_data_products
+    description: List data products.
+    source_operation: Galaxy Data Product Service
+  - name: explore_catalog
+    description: Explore catalog metadata via the discovery service.
+    source_operation: Galaxy Discovery Service

@@ -1,0 +1,20 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.starburst.io/starburst-galaxy/get-started/release-notes.html
+versioning:
+  scheme: uri-path
+  current: v1
+  release_cadence: continuous (calendar-dated release notes)
+  docs: https://docs.starburst.io/starburst-galaxy/get-started/release-notes.html
+status_page: https://status.galaxy.starburst.io/
+sla:
+  url: https://www.starburst.io/terms/
+  notes: SLA terms are governed by the Starburst Galaxy commercial agreement; no public uptime target published.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No formal RFC 8594 Sunset/Deprecation-header policy located in public docs; Galaxy ships continuously with dated release notes.
+deprecated_operations: []
+notes: >-
+  Starburst Galaxy is a continuously-released managed service; the dated release-notes feed is the
+  version-of-record. A public status page exists at status.galaxy.starburst.io.

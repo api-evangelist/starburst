@@ -1,0 +1,14 @@
+generated: '2026-07-21'
+method: searched
+probe: true
+url: https://trust.starburst.io/
+platform: Vanta
+certifications: []
+note: >-
+  Starburst operates a Vanta-hosted Trust Center at trust.starburst.io (HTTP 200 verified). The
+  page is JavaScript-rendered, so specific certification names could not be machine-extracted in
+  this pass and are intentionally left empty rather than fabricated. A public /about/security/ page
+  also exists. Because no cert names were verified, no `Compliance` pointer is emitted.
+evidence:
+  - {source: https://trust.starburst.io/, kind: trust-center, detail: "Vanta-powered, HTTP 200"}
+  - {source: https://www.starburst.io/about/security/, kind: security-page, detail: "public security overview"}

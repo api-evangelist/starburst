@@ -1,0 +1,41 @@
+generated: '2026-07-21'
+method: searched
+source: registries (PyPI, npm, Terraform Registry, Maven Central) + github.com/starburstdata
+packages:
+  - language: hcl
+    registry: terraform
+    name: starburstdata/galaxy
+    url: https://registry.terraform.io/providers/starburstdata/galaxy/latest
+    install: "terraform { required_providers { galaxy = { source = \"starburstdata/galaxy\" } } }"
+    version: 0.38.0
+    official: true
+    notes: Official Terraform provider for provisioning Starburst Galaxy resources.
+  - language: python
+    registry: pypi
+    name: dbt-trino
+    url: https://pypi.org/project/dbt-trino/
+    install: pip install dbt-trino
+    official: true
+    notes: Official Starburst-maintained dbt adapter for Trino / Starburst (github.com/starburstdata/dbt-trino).
+  - language: python
+    registry: pypi
+    name: trino
+    url: https://pypi.org/project/trino/
+    install: pip install trino
+    version: 0.338.0
+    official: true
+    notes: Official Trino Python client (github.com/trinodb/trino-python-client); Trino is the open-source engine Starburst leads. Used to connect to Starburst Galaxy and Enterprise clusters.
+  - language: javascript
+    registry: npm
+    name: trino-client
+    url: https://www.npmjs.com/package/trino-client
+    install: npm install trino-client
+    official: true
+    notes: Official Trino JavaScript/TypeScript client (github.com/trinodb/trino-js-client).
+  - language: clojure
+    registry: github
+    name: starburst-metabase-driver
+    url: https://github.com/starburstdata/metabase-driver
+    install: "Download the .jar release and place in Metabase plugins/"
+    official: true
+    notes: Official Starburst driver for Metabase.

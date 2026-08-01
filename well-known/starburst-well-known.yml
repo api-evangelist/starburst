@@ -1,0 +1,18 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of /.well-known/ paths
+host: https://www.starburst.io
+documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+hosts_probed:
+  - https://www.starburst.io
+  - https://docs.starburst.io
+  - https://galaxy.starburst.io
+note: >-
+  No /.well-known/ discovery documents were served (all 404). Recorded for auditability; no
+  WellKnown/SecurityTxt pointer is emitted since nothing was found.
