@@ -10,6 +10,17 @@ description: >-
   Starburst Galaxy exposes a public REST API secured with OAuth2 client credentials for managing
   clusters, catalogs, users, roles, privileges, access policies, data products, and SQL jobs.
 url: https://raw.githubusercontent.com/api-evangelist/starburst/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
