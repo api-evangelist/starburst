@@ -43,7 +43,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-10-06'
 tags:
 - Company
 - Data Analytics
@@ -72,6 +72,8 @@ apis:
   - type: Authentication
     url: authentication/starburst-authentication.yml
 common:
+- url: https://www.starburst.io/blog/rss.xml
+  type: BlogRSS
 - type: Website
   url: https://www.starburst.io/
 - type: DeveloperPortal
